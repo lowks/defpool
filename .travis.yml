@@ -7,6 +7,8 @@ notifications:
     - eduardo@gurgel.me
 env:
   - MIX_ENV=test
+before_install:
+  - mix local.hex --force
 otp_release:
   - 17.0
   - 17.1
